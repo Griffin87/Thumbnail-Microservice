@@ -18,14 +18,10 @@ while True:
 
     response = requests.get(api + str(isbn))
 
-    # for key, val in response.json()['items'][0]['volumeInfo'].items():
-    #     print(key)
-
-    # print(json.dumps(response.json(), indent=4))
-
+    # destructuring the JSON object from the google books API
     thumbnail_link = response.json()['items'][0]['volumeInfo']['imageLinks']['thumbnail']
 
-    print(f"Found link {thumbnail_link}")
+    print(f"Found the following link: {thumbnail_link}")
     time.sleep(1)
 
     print("Returning resource link to client")
