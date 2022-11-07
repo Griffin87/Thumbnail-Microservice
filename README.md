@@ -1,4 +1,16 @@
 # Thumbnail-Microservice
+
+Note: this microservice makes use of the Python Requests library
+
+see documentation here: https://requests.readthedocs.io/en/latest/
+
+Install using the following terminal command:
+```
+
+$ python -m pip install requests
+
+```
+
 Simple microservice utilizing ZeroMQ
 
 Upon request, the microservice provides a URL to a thumbnail image of a book cover associated with a specific ISBN
